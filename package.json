@@ -1,0 +1,38 @@
+{
+  "name": "skwad",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "test": "cross-env NODE_ENV=development nodemon app.js",
+    "build": "cross-env NODE_ENV=production parcel build ./src/index.html --no-minify --public-url /"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.2.1",
+    "babel-preset-react-app": "^3.1.0",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "parcel-bundler": "^1.4.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "three": "^0.89.0"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.1"
+  }
+}
