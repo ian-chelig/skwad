@@ -1,5 +1,12 @@
-() => (
-  <div className="App">
-    <h1 className="App-Title">Hello Parcel x React</h1>
-  </div>
-);
+import React, { Component } from 'react';
+
+
+class Home extends Component {
+    render(){
+        return (
+            <p> test </p>
+        )
+    }
+}
+
+export default Home
