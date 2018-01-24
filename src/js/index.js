@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import app from './app';
+import '../css/index.css';
+import App from '../components/app.js'
 
-ReactDOM.render(
-    <app />,
-    document.getElementById('app')
-);
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// Hot Module Replacement
+if (module.hot) {
+  module.hot.accept();
+}

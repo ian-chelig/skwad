@@ -16,6 +16,7 @@
     "react-dom": "^16.2.0",
     "redis": "^2.8.0",
     "session-rethinkdb": "^2.0.1",
+    "socketio": "^1.0.0",
     "three": "^0.89.0"
   },
   "postcss": {
